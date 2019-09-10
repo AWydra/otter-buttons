@@ -1,0 +1,57 @@
+$bgColors: (
+  "red": #c02942,
+  "yellow": #ecd078,
+  "orange": #e67e22,
+  "green": #59ba41,
+  "lime": #aee239,
+  "brown": #774f38,
+  "pink": #f89fa1,
+  "blue": #1265a8,
+  "black": #111,
+  "white": #f9f9f9
+);
+
+$fontColors: (
+  "black": #111,
+  "white": #f9f9f9
+);
+
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px
+);
+
+$sizes: (
+  "mini": (
+    "padding": 0 14px,
+    "font-size": 11px,
+    "height": 28px,
+    "line-height": 28px
+  ),
+  "small": (
+    "padding": 0 17px,
+    "font-size": 12px,
+    "height": 34px,
+    "line-height": 34px
+  ),
+  "normal": (
+    "padding": 0 22px,
+    "font-size": 14px,
+    "height": 40px,
+    "line-height": 40px
+  ),
+  "large": (
+    "padding": 0 26px,
+    "font-size": 16px,
+    "height": 46px,
+    "line-height": 46px
+  ),
+  "xlarge": (
+    "padding": 0 32px,
+    "font-size": 18px,
+    "height": 52px,
+    "line-height": 52px
+  )
+);
