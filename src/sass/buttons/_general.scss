@@ -1,0 +1,26 @@
+.obtn {
+  height: 40px;
+  margin: 5px;
+  padding: 0 22px;
+  display: inline-block;
+  position: relative;
+  background-color: #2e8ece;
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  border: none;
+  outline: 0;
+  transition: all 0.1s ease-in-out;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  $parent: &;
+
+  &:hover,
+  &:focus {
+    background-color: lighten(#2e8ece, 10);
+  }
+}
