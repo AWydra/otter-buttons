@@ -23,4 +23,25 @@
   &:focus {
     background-color: lighten(#2e8ece, 10);
   }
+
+  &-light {
+    color: #333;
+  }
+
+  //Background colors
+  @each $name, $color in $bgColors {
+    &-#{$name} {
+      background-color: $color;
+
+      &:hover:not(#{$parent}-light),
+      &:focus:not(#{$parent}-light) {
+        background-color: lighten($color, 10);
+      }
+
+      &#{$parent}-light:hover,
+      &#{$parent}-light:focus {
+        background-color: darken($color, 10);
+      }
+    }
+  }
 }
