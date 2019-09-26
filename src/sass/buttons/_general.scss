@@ -7,7 +7,7 @@
   background-color: #2e8ece;
   color: #fff;
   font-size: 14px;
-  line-height: 40px;
+  line-height: normal;
   font-weight: 700;
   text-transform: uppercase;
   white-space: nowrap;
@@ -33,14 +33,31 @@
     &-#{$name} {
       background-color: $color;
 
-      &:hover:not(#{$parent}-light),
-      &:focus:not(#{$parent}-light) {
+      &:hover:not(#{$parent}-light):not(#{$parent}-outline),
+      &:focus:not(#{$parent}-light):not(#{$parent}-outline) {
         background-color: lighten($color, 10);
       }
 
       &#{$parent}-light:hover,
       &#{$parent}-light:focus {
         background-color: darken($color, 10);
+      }
+
+      &#{$parent}-outline {
+        background-color: transparent;
+        border: solid $color 2px;
+        color: $color;
+
+        &:hover,
+        &:focus {
+          background-color: $color;
+          color: #333;
+        }
+
+        &:hover:not(#{$parent}-light),
+        &:focus:not(#{$parent}-light) {
+          color: white;
+        }
       }
     }
   }
