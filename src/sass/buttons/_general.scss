@@ -81,4 +81,40 @@
       }
     }
   }
+
+  &-iconed {
+    position: relative;
+    overflow: hidden;
+
+    #{$parent}-icon {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.1);
+      transform: translateX(-100%);
+      transition: all 0.1s ease-in-out;
+    }
+
+    #{$parent}-content {
+      display: inline-block;
+      position: relative;
+      transition: all 0.1s ease-in-out;
+    }
+
+    &:hover,
+    &:focus {
+      #{$parent}-icon {
+        transform: translateX(0);
+      }
+
+      #{$parent}-content {
+        transform: translateX(10%);
+      }
+    }
+  }
 }
