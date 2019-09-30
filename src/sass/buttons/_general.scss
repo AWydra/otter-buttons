@@ -116,5 +116,24 @@
         transform: translateX(10%);
       }
     }
+
+    &#{$parent}-right {
+      #{$parent}-icon {
+        left: unset;
+        right: 0;
+        transform: translateX(100%);
+      }
+
+      &:hover,
+      &:focus {
+        #{$parent}-icon {
+          transform: translateX(0);
+        }
+        #{$parent}-content {
+          position: relative;
+          transform: translateX(-10%);
+        }
+      }
+    }
   }
 }
