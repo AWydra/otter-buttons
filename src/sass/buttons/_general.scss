@@ -136,4 +136,11 @@
       }
     }
   }
+
+  //Font colors
+  @each $name, $color in $fontColors {
+    &#{$parent}-text-#{$name} {
+      color: #{$color};
+    }
+  }
 }

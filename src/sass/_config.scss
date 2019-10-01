@@ -12,8 +12,8 @@ $bgColors: (
 );
 
 $fontColors: (
-  "black": #111,
-  "white": #f9f9f9
+  "black": #333,
+  "white": #fff
 );
 
 $breakpoints: (
@@ -27,31 +27,26 @@ $sizes: (
   "mini": (
     "padding": 0 14px,
     "font-size": 11px,
-    "height": 28px,
-    "line-height": 28px
+    "height": 28px
   ),
   "small": (
     "padding": 0 17px,
     "font-size": 12px,
-    "height": 34px,
-    "line-height": 34px
+    "height": 34px
   ),
   "normal": (
     "padding": 0 22px,
     "font-size": 14px,
-    "height": 40px,
-    "line-height": 40px
+    "height": 40px
   ),
   "large": (
     "padding": 0 26px,
     "font-size": 16px,
-    "height": 46px,
-    "line-height": 46px
+    "height": 46px
   ),
   "xlarge": (
     "padding": 0 32px,
     "font-size": 18px,
-    "height": 52px,
-    "line-height": 52px
+    "height": 52px
   )
 );
