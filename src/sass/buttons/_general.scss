@@ -68,6 +68,10 @@
       @each $style, $value in $styles {
         #{$style}: $value;
       }
+
+      &#{$parent}-circle {
+        border-radius: map-get($styles, "height") / 2;
+      }
     }
 
     //Breakpoints
@@ -80,6 +84,10 @@
         }
       }
     }
+  }
+
+  &-rounded {
+    border-radius: 4px;
   }
 
   &-iconed {
