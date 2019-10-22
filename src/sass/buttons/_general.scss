@@ -28,7 +28,7 @@
     color: #333;
   }
 
-  //Background colors
+  // Background colors
   @each $name, $color in $bgColors {
     &-#{$name} {
       background-color: $color;
@@ -62,7 +62,7 @@
     }
   }
 
-  //Sizes
+  // Sizes
   @each $size, $styles in $sizes {
     &-#{$size} {
       @each $style, $value in $styles {
@@ -74,7 +74,7 @@
       }
     }
 
-    //Breakpoints
+    // Breakpoints
     @each $breakpoint, $value in $breakpoints {
       @media (min-width: #{$value}) {
         &-#{$breakpoint}-#{$size} {
@@ -145,10 +145,18 @@
     }
   }
 
-  //Font colors
+  // Font colors
   @each $name, $color in $fontColors {
     &#{$parent}-text-#{$name} {
       color: #{$color};
+    }
+  }
+
+  // Fixed width
+  @for $i from 3 through 12 {
+    $width: $i * 25;
+    &#{$parent}-#{$width} {
+      width: #{$width}px;
     }
   }
 }
